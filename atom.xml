@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://huer0625.github.com/atom.xml" rel="self"/>
+  <link href="http://huer0625.github.com/"/>
+  <updated>2012-08-30T11:11:25+08:00</updated>
+  <id>http://huer0625.github.com/</id>
+  <author>
+    <name><![CDATA[Shaohua Zhang]]></name>
+    <email><![CDATA[zhangshaohua20101010($at)gmail(__dot__)com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[c++ hello]]></title>
+    <link href="http://huer0625.github.com/blog/2012/08/30/c-plus-plus-hello/"/>
+    <updated>2012-08-30T11:09:00+08:00</updated>
+    <id>http://huer0625.github.com/blog/2012/08/30/c-plus-plus-hello</id>
+    <content type="html"><![CDATA[<h1>for test, c++ program</h1>
+
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+    cout &lt;&lt; "hello, the world" &lt;&lt; endl;
+    return 0;
+}   
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
