@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-08-31T09:18:41+08:00</updated>
+  <updated>2012-08-31T09:24:07+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -18,7 +18,7 @@
     <link href="http://huer0625.github.com/blog/2012/08/31/work-note/"/>
     <updated>2012-08-31T08:08:00+08:00</updated>
     <id>http://huer0625.github.com/blog/2012/08/31/work-note</id>
-    <content type="html"><![CDATA[<h1>测试磁盘读写速度</h1>
+    <content type="html"><![CDATA[<h2>测试磁盘读写速度</h2>
 
 <pre><code>dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
 iostat -x -m 1
