@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[技术随笔]]></title>
+  <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-01T19:25:39+08:00</updated>
+  <updated>2012-09-01T20:15:12+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -20,8 +20,9 @@
     <id>http://huer0625.github.com/blog/2012/09/01/note-of-effective-stl</id>
     <content type="html"><![CDATA[<h3>I4 用empty代替size() == 0</h3>
 
-<p>通过<a href="http://www.cplusplus.com/reference/stl/">cplusplus</a>可以知道stl保证了empty()算法复杂度为O(1),但是size()的算法复杂度为(*)。
-为什么不能保证所有的size()的复杂度为O(1)？问题出在list。list</p>
+<p>通过<a href="http://www.cplusplus.com/reference/stl/">cplusplus</a>可以知道stl保证了empty()算法复杂度为O(1),但是size()的算法复杂度为(*)。</p>
+
+<p>为什么不能保证所有的size()的复杂度为O(1)？问题出在list。list</p>
 ]]></content>
   </entry>
   
