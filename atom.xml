@@ -4,7 +4,7 @@
   <title><![CDATA[技术随笔]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-01T18:56:36+08:00</updated>
+  <updated>2012-09-01T19:08:24+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -24,11 +24,13 @@
 
 <h2>gdb</h2>
 
-<h2>python</h2>
+<h2>python书籍</h2>
 
-<h3>入门级教程;</h3>
+<p><a href="http://woodpecker.org.cn/abyteofpython_cn/chinese/">《python简明教程》</a></p>
 
-<p>[python简明教程]</p>
+<p>《python核心教程》（第二版）</p>
+
+<p>《python cookbook》 (中文版 )</p>
 ]]></content>
   </entry>
   
