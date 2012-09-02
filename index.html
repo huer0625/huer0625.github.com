@@ -184,26 +184,27 @@
 
   <div class="entry-content"><h2>测试磁盘读写速度</h2>
 
-<p>&#8220; bash</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>./tmp.tmp <span class="nv">bs</span><span class="o">=</span>4k <span class="nv">count</span><span class="o">=</span>10240000 &amp;
+</span><span class='line'>iostat -x -m 1
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
-iostat -x -m 1
-</code></pre>
-
-<p>&#8220;</p>
 
 <h2>查看服务是否开启</h2>
 
-<p>&#8220; bash</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$netstat</span>  -n | grep 8080
+</span><span class='line'>tcp        0      0 xx.x.x.x:xxxx         xx.x.x.x:xxxx           TIME_WAIT
+</span><span class='line'><span class="nv">$/</span>usr/sbin/lsof -i | grep xxxx
+</span><span class='line'>nc -l xxxx
+</span><span class='line'><span class="nv">$telnet</span> ipaddr port
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>$netstat  -n | grep 8080
-tcp        0      0 xx.x.x.x:xxxx         xx.x.x.x:xxxx           TIME_WAIT   
-$/usr/sbin/lsof -i | grep xxxx
-nc -l xxxx
-$telnet ipaddr port
-</code></pre>
-
-<p>&#8220;</p>
 </div>
   
   
@@ -282,14 +283,14 @@ $telnet ipaddr port
   </header>
 
 
-  <div class="entry-content"><p>&#8220; python</p>
+  <div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span class='line'>  <span class="k">print</span> <span class="s">&quot;hello, the world&quot;</span>
+</span><span class='line'>  <span class="k">print</span> <span class="s">&quot;test&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>if __name__ == "__main__":
-    print "hello, the world"
-    print "test"
-</code></pre>
-
-<p>&#8220;</p>
 </div>
   
   

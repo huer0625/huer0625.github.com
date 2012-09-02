@@ -9,8 +9,16 @@
   <meta name="author" content="Shaohua Zhang">
 
   
-  <meta name="description" content="测试磁盘读写速度 &#8220; bash dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
-iostat -x -m 1 &#8220; 查看服务是否开启 &#8220; bash $netstat -n | grep 8080 &hellip;">
+  <meta name="description" content="测试磁盘读写速度 1
+2
+dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
+iostat -x -m 1 查看服务是否开启 1
+2
+3
+4
+5
+$netstat -n | grep 8080
+tcp 0 0 xx.x.x.x:xxxx &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -93,26 +101,27 @@ iostat -x -m 1 &#8220; 查看服务是否开启 &#8220; bash $netstat -n | grep 
 
 <div class="entry-content"><h2>测试磁盘读写速度</h2>
 
-<p>&#8220; bash</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>./tmp.tmp <span class="nv">bs</span><span class="o">=</span>4k <span class="nv">count</span><span class="o">=</span>10240000 &amp;
+</span><span class='line'>iostat -x -m 1
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
-iostat -x -m 1
-</code></pre>
-
-<p>&#8220;</p>
 
 <h2>查看服务是否开启</h2>
 
-<p>&#8220; bash</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$netstat</span>  -n | grep 8080
+</span><span class='line'>tcp        0      0 xx.x.x.x:xxxx         xx.x.x.x:xxxx           TIME_WAIT
+</span><span class='line'><span class="nv">$/</span>usr/sbin/lsof -i | grep xxxx
+</span><span class='line'>nc -l xxxx
+</span><span class='line'><span class="nv">$telnet</span> ipaddr port
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>$netstat  -n | grep 8080
-tcp        0      0 xx.x.x.x:xxxx         xx.x.x.x:xxxx           TIME_WAIT   
-$/usr/sbin/lsof -i | grep xxxx
-nc -l xxxx
-$telnet ipaddr port
-</code></pre>
-
-<p>&#8220;</p>
 </div>
 
 
