@@ -10,8 +10,7 @@
 
   
   <meta name="description" content="I4 用empty代替size() == 0 通过cplusplus可以知道stl保证了empty()算法复杂度为O(1),但是size()的算法复杂度为(*)。
-为什么不能保证所有的size()的复杂度为O(1)？问题出在list。list
-">
+为什么不能保证所有的size()的复杂度为O(1)？问题出在list的splice操作。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -98,7 +97,21 @@
   <div class="entry-content"><h3>I4 用empty代替size() == 0</h3>
 
 <p>通过<a href="http://www.cplusplus.com/reference/stl/">cplusplus</a>可以知道stl保证了empty()算法复杂度为O(1),但是size()的算法复杂度为(*)。<br/>
-为什么不能保证所有的size()的复杂度为O(1)？问题出在list。list</p>
+为什么不能保证所有的size()的复杂度为O(1)？问题出在list的splice操作。splice操作可以把一个列表的元素移除到另外一个列表上。
+<a href="http://www.cplusplus.com/reference/stl/list/splice/">splice原型如下</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="kt">void</span> <span class="n">splice</span> <span class="p">(</span> <span class="n">iterator</span> <span class="n">position</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="n">Allocator</span><span class="o">&gt;&amp;</span> <span class="n">x</span> <span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">splice</span> <span class="p">(</span> <span class="n">iterator</span> <span class="n">position</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="n">Allocator</span><span class="o">&gt;&amp;</span> <span class="n">x</span><span class="p">,</span> <span class="n">iterator</span> <span class="n">i</span> <span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">splice</span> <span class="p">(</span> <span class="n">iterator</span> <span class="n">position</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="n">Allocator</span><span class="o">&gt;&amp;</span> <span class="n">x</span><span class="p">,</span> <span class="n">iterator</span> <span class="n">first</span><span class="p">,</span> <span class="n">iterator</span> <span class="n">last</span> <span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果不考虑size，最简单的splice操作可以是O(1)。但如果考虑到list中有一个size，每当操作或者删除的时候都需要更新size，则splice操作必须为O(m),
+其中m为操作区间元素的个数。<br/>
+综上： stl保证empty的算法复杂度为O(1), 但不保证size为O(1)。所以如果需要判断一个容器是否为空，建议使用empty。</p>
 </div>
   
   
