@@ -4,7 +4,7 @@
   <title><![CDATA[技术随笔]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-02T12:53:40+08:00</updated>
+  <updated>2012-09-02T12:55:56+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -78,6 +78,7 @@ $telnet ipaddr port
 
 <pre><code>#!/bin/bash
 echo "hello, the world"
+echo "test for code prettify"
 </code></pre>
 ]]></content>
   </entry>
