@@ -184,11 +184,17 @@
 
   <div class="entry-content"><h2>测试磁盘读写速度</h2>
 
+<p>&#8220; bash</p>
+
 <pre><code>dd if=/dev/zero of=./tmp.tmp bs=4k count=10240000 &amp;
 iostat -x -m 1
 </code></pre>
 
+<p>&#8220;</p>
+
 <h2>查看服务是否开启</h2>
+
+<p>&#8220; bash</p>
 
 <pre><code>$netstat  -n | grep 8080
 tcp        0      0 xx.x.x.x:xxxx         xx.x.x.x:xxxx           TIME_WAIT   
@@ -196,6 +202,8 @@ $/usr/sbin/lsof -i | grep xxxx
 nc -l xxxx
 $telnet ipaddr port
 </code></pre>
+
+<p>&#8220;</p>
 </div>
   
   
