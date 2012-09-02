@@ -118,8 +118,15 @@
 <blockquote><ol>
 <li>更少的代码量</li>
 <li>意图更清晰</li>
-<li>性能
-性能主要从下面两个方面考虑:</li>
+<li>性能</li>
+</ol>
+</blockquote>
+
+<p>内存分布连续的序列容器(vector, string, dequeue)，性能主要从下面两个方面考虑:</p>
+
+<blockquote><ol>
+<li>内存的移动&amp;拷贝</li>
+<li>realloc</li>
 </ol>
 </blockquote>
 </div>
