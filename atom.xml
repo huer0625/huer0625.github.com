@@ -4,7 +4,7 @@
   <title><![CDATA[技术随笔]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-02T13:24:48+08:00</updated>
+  <updated>2012-09-02T13:26:48+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -88,14 +88,14 @@ echo "test for code prettify"
     <link href="http://huer0625.github.com/blog/2012/08/30/python-hello-world/"/>
     <updated>2012-08-30T11:18:00+08:00</updated>
     <id>http://huer0625.github.com/blog/2012/08/30/python-hello-world</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
-</span><span class='line'>  <span class="k">print</span> <span class="s">&quot;hello, the world&quot;</span>
-</span><span class='line'>  <span class="k">print</span> <span class="s">&quot;test&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+    <content type="html"><![CDATA[<p>` python
+if <strong>name</strong> == &#8221;<strong>main</strong>&#8221;:</p>
 
+<pre><code>print "hello, the world"
+print "test"
+</code></pre>
+
+<p>`</p>
 ]]></content>
   </entry>
   
