@@ -4,7 +4,7 @@
   <title><![CDATA[技术随笔]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-03T07:42:22+08:00</updated>
+  <updated>2012-09-03T07:55:02+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -56,6 +56,44 @@
 <li>realloc</li>
 </ol>
 </blockquote>
+
+<p>而list则考虑多余指针的赋值问题。</p>
+
+<h2>I9 在删除中仔细选择</h2>
+
+<ol>
+<li>vector, string删除操作如下:</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="n">container</span> <span class="n">c</span><span class="p">;</span> <span class="c1">// container: vector, string</span>
+</span><span class='line'><span class="c1">// erase-remove</span>
+</span><span class='line'><span class="n">c</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">c</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">c</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">c</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">val</span><span class="p">));</span>
+</span><span class='line'><span class="c1">// erase-remove_if</span>
+</span><span class='line'><span class="n">c</span><span class="p">.</span><span class="n">rease</span><span class="p">(</span><span class="n">c</span><span class="p">.</span><span class="n">remove_if</span><span class="p">(</span><span class="n">c</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">c</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">bf</span><span class="p">));</span> <span class="c1">// bf: boolFun or boolFuncObject</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>list删除操作如下：</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">li</span><span class="p">;</span>
+</span><span class='line'><span class="n">li</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">val</span><span class="p">);</span> 
+</span><span class='line'><span class="n">li</span><span class="p">.</span><span class="n">remove_if</span><span class="p">(</span><span class="n">bf</span><span class="p">);</span> <span class="c1">// bf: boolFun or boolFuncObject</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 ]]></content>
   </entry>
   
