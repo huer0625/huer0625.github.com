@@ -4,7 +4,7 @@
   <title><![CDATA[技术随笔]]></title>
   <link href="http://huer0625.github.com/atom.xml" rel="self"/>
   <link href="http://huer0625.github.com/"/>
-  <updated>2012-09-01T20:20:01+08:00</updated>
+  <updated>2012-09-02T12:53:40+08:00</updated>
   <id>http://huer0625.github.com/</id>
   <author>
     <name><![CDATA[Shaohua Zhang]]></name>
@@ -73,7 +73,10 @@ $telnet ipaddr port
     <link href="http://huer0625.github.com/blog/2012/08/30/bash-hello-the-world/"/>
     <updated>2012-08-30T11:25:00+08:00</updated>
     <id>http://huer0625.github.com/blog/2012/08/30/bash-hello-the-world</id>
-    <content type="html"><![CDATA[<pre><code>#!/bin/bash
+    <content type="html"><![CDATA[<!-- language: lang-sh -->
+
+
+<pre><code>#!/bin/bash
 echo "hello, the world"
 </code></pre>
 ]]></content>
@@ -84,7 +87,10 @@ echo "hello, the world"
     <link href="http://huer0625.github.com/blog/2012/08/30/python-hello-world/"/>
     <updated>2012-08-30T11:18:00+08:00</updated>
     <id>http://huer0625.github.com/blog/2012/08/30/python-hello-world</id>
-    <content type="html"><![CDATA[<pre><code>if __name__ == "__main__":
+    <content type="html"><![CDATA[<!-- language: lang-python -->
+
+
+<pre><code>if __name__ == "__main__":
     print "hello, the world"
 </code></pre>
 ]]></content>
